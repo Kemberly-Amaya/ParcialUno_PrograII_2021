@@ -1,0 +1,17 @@
+﻿@model KemberlyCatalinaAmayaSerrano.Models.VIEWSMODEL.CajeroViewsModels
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Index</h2>
+@using (Html.BeginForm("Monto", "Cajero", FormMethod.Post))
+{
+
+@Html.LabelFor(m => m.Monto)
+@Html.TextBoxFor(m => m.Monto)
+
+    <input type="submit" />
+
+}
+
+
